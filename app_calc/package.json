@@ -1,0 +1,13 @@
+{
+  "name": "app_calc",
+  "version": "1.0.0",
+  "description": "A simple calculator application",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
