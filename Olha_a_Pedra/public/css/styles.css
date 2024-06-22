@@ -1,0 +1,84 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Midnew regular', sans-serif;
+    background: black; /* Remover fundo preto */
+}
+
+#spaceCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    z-index: 1;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+.login-container, .ranking-container {
+    position: relative;
+    z-index: 1;
+    margin-top: 100px; /* Para garantir que fique abaixo do cabeçalho */
+    text-align: center;
+    color: white;
+}
+
+.game-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border: 2px solid white; /* Opcional: adiciona uma borda ao redor do canvas do jogo */
+}
+
+form {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+input, button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Midnew regular', sans-serif;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: 2px solid blue;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background-color: #555;
+}
